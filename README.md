@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Amazzy24128
-- 👀 I’m interested in play Apex Legends
-- 🌱 I’m currently learning python and cpp
+- 👀 I’m interested in play Galgames
+- 🌱 I’m currently learning embedded development
 - 💞️ I’m looking to collaborate on noting。。。
 - 📫 How to reach me ： please email me when needed (2709470197@qq.com) 
 - 😄 Pronouns: ...
