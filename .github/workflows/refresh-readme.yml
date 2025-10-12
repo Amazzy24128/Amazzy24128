@@ -1,0 +1,44 @@
+name: Refresh README stats
+
+on:
+  schedule:
+    # every hour
+    - cron: '0 * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  refresh-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Update README refresh comment
+        run: |
+          set -e
+          TIMESTAMP="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          FILE="README.md"
+          # If marker exists, replace it. Otherwise append it to the end.
+          if grep -q "<!-- README_REFRESH:" "$FILE"; then
+            sed -i -E "s/<!-- README_REFRESH: .*-->/<!-- README_REFRESH: $TIMESTAMP -->/" "$FILE"
+          else
+            echo -e "\n<!-- README_REFRESH: $TIMESTAMP -->" >> "$FILE"
+          fi
+
+      - name: Commit and push README update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          # commit only if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh README stats [skip ci]"
+            git push
+          fi
