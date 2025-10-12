@@ -15,3 +15,29 @@
 </table>
 [/table]
 
+[!-- Skills grouped by category -->
+### Skills
+
+**Programming Languages**
+
+[![Languages](https://skillicons.dev/icons?i=cpp,c,python,java,rust,js,matlab)](https://skillicons.dev)
+
+**Libraries & Frameworks**
+
+[![Libraries](https://skillicons.dev/icons?i=opencv)](https://skillicons.dev)
+
+**Embedded & Hardware**
+
+[![Embedded](https://skillicons.dev/icons?i=arduino)](https://skillicons.dev)
+
+**DevOps / Cloud / VCS**
+
+[![DevOps](https://skillicons.dev/icons?i=docker,azure,git,github)](https://skillicons.dev)
+
+**Operating Systems**
+
+[![OS](https://skillicons.dev/icons?i=linux,ubuntu,debian,windows)](https://skillicons.dev)
+
+**Editors & Tools**
+
+[![Editors](https://skillicons.dev/icons?i=vim,vscode,ps)](https://skillicons.dev)
