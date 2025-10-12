@@ -1,4 +1,4 @@
-[table]
+
 <table>
 	<tr>
 		<td>
@@ -13,9 +13,7 @@
 		</td>
 	</tr>
 </table>
-[/table]
 
-[!-- Skills grouped by category -->
 ### Skills
 
 **Programming Languages**
