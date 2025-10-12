@@ -1,1 +1,1 @@
-[![Amazzy24128's GitHub stats](https://github-readme-stats.vercel.app/api?username=Amazzy24128)](https://github.com/Amazzy24128/github-readme-stats)
+[![Amazzy24128's GitHub stats](https://github-readme-stats.vercel.app/api?username=Amazzy24128&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&cache_seconds=1800)](https://github.com/anuraghazra/github-readme-stats)
